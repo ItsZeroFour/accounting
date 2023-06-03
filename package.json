@@ -1,6 +1,6 @@
 {
   "homepage": "https://ItsZeroFour.github.io/accounting",
-  "name": "accounting",
+  "name": "accounting_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
