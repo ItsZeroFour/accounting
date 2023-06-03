@@ -11,7 +11,7 @@ const NotFound = () => {
         <h2 className={style.header} data-text="404">
           404
         </h2>
-        <h4 data-text="Opps! Page not found">Opps! Page not found</h4>
+        <h4 data-text="Opps! Page not found">Opps! Page not found.</h4>
         <p>
           {language === "russian"
             ? "Извините, страница, которую вы ищете, не существует. Если вы думаете, что что-то сломано, сообщите о проблеме."
