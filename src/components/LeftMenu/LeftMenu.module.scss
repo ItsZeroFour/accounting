@@ -1,0 +1,50 @@
+.leftmenu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+  @media (max-width: 1105px) {
+    display: none;
+  }
+}
+
+.leftmenu__list,
+.leftmenu__list__bottom {
+  li {
+    display: flex;
+    padding: 0 0 1rem;
+    cursor: pointer;
+
+    svg {
+      color: var(--color-blue);
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.leftmenu__list {
+  margin-top: 2rem;
+
+  li {
+    margin-top: 0.2rem;
+
+    a {
+      display: flex;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.leftmenu__list__bottom {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,128 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 20rem;
+
+  @media (max-height: 523px) {
+    margin-top: 15rem;
+  }
+
+  @media (max-height: 440px) {
+    margin-top: 10rem;
+  }
+}
+
+.dots {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  opacity: 1;
+  -webkit-animation: dot-middle 1s infinite linear;
+  animation: dot-middle 1s infinite linear;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+  }
+
+  &:before {
+    left: -28px;
+    opacity: 0.25;
+    -webkit-animation: dot-left 1s infinite linear;
+    animation: dot-left 1s infinite linear;
+  }
+
+  &:after {
+    left: 28px;
+    opacity: 1;
+    -webkit-animation: dot-right 1s infinite linear;
+    animation: dot-right 1s infinite linear;
+  }
+}
+
+@-webkit-keyframes dot-middle {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot-middle {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes dot-left {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes dot-left {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+
+@-webkit-keyframes dot-right {
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes dot-right {
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}

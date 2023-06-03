@@ -1,0 +1,28 @@
+:root {
+  --color-white: #fff;
+  --color-black: #111;
+  --color-blue: #1361fd;
+  --color-light-black: #425261;
+  --color-gray: #bebebe;
+  --color-green: #38c1a7;
+  --color-red: #f57676;
+  --color-purple: #7e24e9;
+
+  --body-background: #fff;
+  --body-color: #23292f;
+  --body-block-background: #fff;
+
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 1.5rem;
+
+  --box-shadow: 5px 10px 50px #111;
+
+  --transition: all 0.2s ease-in-out;
+}
+
+[data-theme="dark"] {
+  --body-background: #282c34;
+  --body-block-background: #272b31;
+  --body-color: #fff;
+}

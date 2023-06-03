@@ -1,0 +1,122 @@
+.registration {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12%;
+  width: 45rem;
+
+  @media (max-width: 815px) {
+    margin-top: 5%;
+    width: auto;
+  }
+}
+
+.registration__content {
+  box-shadow: var(--box-shadow);
+  display: flex;
+
+  @media (max-width: 815px) {
+    flex-direction: column;
+  }
+}
+
+.registration__title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.registration__content__left {
+  padding: 2rem;
+
+  button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    border-radius: var(--border-radius-sm);
+    background: var(--color-purple);
+    color: var(--color-white);
+  }
+
+  .registration__text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    a {
+      color: var(--color-purple);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.registration__form {
+  margin-top: 2rem;
+
+  .registration__form__block {
+    display: flex;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--color-gray);
+    width: 18rem;
+
+    label {
+      margin-right: 0.5rem;
+      color: var(--color-purple);
+    }
+
+    input {
+      @media (max-width: 293px) {
+        width: 10rem;
+      }
+
+      @media (max-width: 261px) {
+        width: 7rem;
+      }
+    }
+
+    @media (max-width: 815px) {
+      width: 100%;
+    }
+  }
+}
+
+.registration__content__right {
+  background-image: url("../../images/registration/laptop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  @media (max-width: 815px) {
+    height: 20rem;
+  }
+}
+
+.registration__mask {
+  background-color: rgba(80, 51, 153, 0.345);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2,
+  p {
+    color: var(--color-white);
+    padding: 0.5rem;
+
+    @media (max-width: 293px) {
+      font-size: 1rem;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.registration__error {
+  margin-top: 1rem;
+}

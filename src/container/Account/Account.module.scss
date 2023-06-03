@@ -1,0 +1,40 @@
+.account {
+  display: flex;
+}
+
+.account__content {
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+  @media (max-width: 1105px) {
+    margin-left: 0;
+
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.account__info {
+  margin-top: 1rem;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .account__info__block {
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius-sm);
+    padding: 0.6rem;
+    margin: 1rem 0;
+    h4 {
+      margin-top: 0.5rem;
+    }
+  }
+}
